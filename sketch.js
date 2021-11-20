@@ -56,16 +56,16 @@ edges =createEdgeSprites();
 function draw() {
   background("black");
 path.velocityY=5;
-if (keyDown("enter")) {
-jake.x=World.mouseX;
-}
+
+jake.x=mouseX;
+
 
 
 
 
 
 //code to reset the background
-if (path.y>400) {
+if (path.y>600) {
   path.y = height/2;
 }
 jake.collide(left_boundary);
